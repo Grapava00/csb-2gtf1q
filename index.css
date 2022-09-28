@@ -1,0 +1,159 @@
+body {
+  background-color: #e0e8ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 450px;
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  margin-bottom: 45px;
+}
+
+.heading {
+  font-weight: 900;
+  font-size: 28px;
+  color: #1f2e55;
+  margin: 0;
+}
+
+.paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #717fa6;
+  max-width: 354px;
+  text-align: center;
+  margin: 17px 0 20px;
+}
+
+.subscription {
+  max-width: 354px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f9ff;
+  padding: 1em 1em;
+  border-radius: 11px;
+  margin-bottom: 32px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.plan img {
+  margin-right: 20px;
+}
+
+.plan .span-1 {
+  font-weight: 900;
+  font-size: 16px;
+  color: #1f2e55;
+}
+
+.plan .span-2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #717fa6;
+}
+
+.subscription a {
+  color: #382ae1;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.subscription a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1rem 7rem;
+  border-radius: 11px;
+  border: none;
+  background: #382ae1;
+  color: white;
+  font-weight: 900;
+  font-size: 15px;
+  box-shadow: 0 10px 15px #979797;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #766cf1;
+}
+
+.btn--cancel {
+  background: none;
+  border: none;
+  color: #717fa6;
+  margin: 32px 0 42px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btn--cancel:hover {
+  color: #1f2e55;
+}
+
+@media (max-width: 420px) {
+  .absolute {
+    display: none;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  .plan .span-1,
+  .plan .span-2 {
+    font-size: 14px;
+  }
+
+  .subscription a {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 1rem 3rem;
+  }
+
+  .btn--cancel {
+    margin: 24px 0 32px;
+  }
+}
